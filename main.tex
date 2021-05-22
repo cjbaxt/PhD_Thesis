@@ -71,7 +71,7 @@
 
 %%%---------------------------------------------------------------------------------------
 %%%	LIST OF CONTENTS
-%%%------------------``------------------------------------------------------------------------
+%%%------------------------------------------------------------------------------------------
 
 \include{styles/toc} 			%%% Table of content
 % \newpage
@@ -87,13 +87,13 @@
 \include{content/chapter4/chapter4}
 
 
-\begin{appendices}
-  %   %% modify slightly header defined in styles/layout.tex
-  \titleformat{\chapter}[display]{\LARGE}{\vspace*{-2.3\baselineskip}\raggedleft\textcolor{chcol}{\normalsize
-      \chaptertitlename\hspace*{4em}}\\\titlerule\vspace*{0.5pc}{\hrulefill\fontsize{150}{150}\selectfont\textcolor{chcol}{\thechapter}}}{-77pt}{
-    \scshape \rmfamily  \linespread{1000}\parbox[t][0pt][c]{0.8\textwidth}}
-  \include{content/chapter2/appendix2}
-\end{appendices}
+% \begin{appendices}
+%   %   %% modify slightly header defined in styles/layout.tex
+%   \titleformat{\chapter}[display]{\LARGE}{\vspace*{-2.3\baselineskip}\raggedleft\textcolor{chcol}{\normalsize
+%       \chaptertitlename\hspace*{4em}}\\\titlerule\vspace*{0.5pc}{\hrulefill\fontsize{150}{150}\selectfont\textcolor{chcol}{\thechapter}}}{-77pt}{
+%     \scshape \rmfamily  \linespread{1000}\parbox[t][0pt][c]{0.8\textwidth}}
+%   \include{content/chapter2/appendix2}
+% \end{appendices}
 
 
 %%% ---------------------------------------------------------------------------------------
@@ -135,9 +135,9 @@
 %\let\cleardoublepage\clearpage
 
 \include{content/coauthors}         %%% mandatory
-\include{content/publications}		%%% optional
+%\include{content/publications}		%%% optional
 \include{content/samenvatting} 	    %%% mandatory
-%%% \include{content/summary} 		%%% mandatory -- not if it is in the intro!
+\include{content/summary} 		%%% mandatory -- not if it is in the intro!
 \include{content/acknowledgements}  %%% optional (but not really!)
 \include{content/afterquote}        %%% optional
 \end{document}
