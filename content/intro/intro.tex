@@ -93,7 +93,7 @@ The measured difference in the transit depth (\rprss) resulting from an absorpti
 where $\delta$ is the transit depth (\rprss) and $\Delta\delta$ is the difference in the transit depth inside and outside a molecular feature. Hotter planets are expected to have larger atmospheric absorption signals ($\Delta\delta$), due to the dependence on $H$ which scales with the temperature. However, the technique of transmission spectroscopy has successfully been applied to cooler targets as well \citep[e.g.,][]{Desert2011b, Berta2012, Crossfield2017}. In Chapter \ref{transits} we use equation \ref{int:eq:NH} to determine how many scale heights the \spitzer Space Telescope probes on average between 3.6 and 4.5~\um~for a survey of 49 transiting planets ranging from 600 to 2600 Kelvin. %The mean scale height for this sample of planets is 550$\pm$330~km.
 We show that, for our sample of planets, we probe an average of 0.5 scale heights between the two \spitzerIRAC bandpasses at the 7$\sigma$ level.
 
-\subsubsection{Emission Spectroscopy}
+\subsubsection{Emission spectroscopy}
 
 The dayside emission of a planet can be measured by observing the planet before, during, and after it passes behind the star. Similar to the transit, this creates a dip in the light measured throughout time. The depth of that dip, or the eclipse depth, is a measure of the fractional flux of the planet relative to the star (\fpfs). Here, $F_p$ and $F_s$ are used to represent the disk-averaged spectral density multiplied by the disk area for the planet and the star respectively. The eclipse depth, in absence of any spectral features, can be represented by the ratio of two Planck functions multiplied by the transit depth,
 
@@ -131,7 +131,7 @@ Launched in 2003, \spitzer Space Telescope was cryogenically cooled with liquid 
 
 The Hubble Space Telescope contains some of the current best instruments for measuring the atmospheres of exoplanets. The Wide Field Camera 3 (WFC3) is capable of measuring spectra from 0.8 to 1.7~\um~with two separate grisms. In Chapter \ref{eclipses} we use the emission spectra measured with the WFC3/G141 grism, which captures the 1.4~\um~water feature. We combine these observations with our \spitzerIRAC photometry.
 
-\subsection{Systematics and Noise Sources}
+\subsection{Systematics and noise Sources}
 
 When attempting to measure the precise signal of an exoplanet atmosphere, dealing with the various noise sources becomes very important. The first noise source is unavoidable: photon noise or shot noise. Each atom inside the star emits a photon with some probability, this probability follows a Poisson distribution with a standard deviation of $\sqrt{N}$, where $N$ is the number of events or counts detected. The other noise sources to correct for are the background noise, dark current, and readout noise. Background noise is the incoming light on the detector in the absence of any apparent sources (e.g. zodiacal light). Dark current arises from thermal fluctuations in the electrons of the detector. Readout noise is the amount of noise generated from the electronics itself, it is a similar contribution to the background noise for \textit{Spitzer}. In our analysis of Spitzer lightcurves (first presented in Chapter \ref{transits}) we measured and subtracted the background from our observations using several different techniques and determined which was the best for each planet.
 
@@ -171,7 +171,7 @@ Unlike several of the other techniques, Pixel Level Decorrelation \citep{Deming2
 
 where $S^t$ is the flux measured over time and $\Delta$ represents the total fluctuations from all sources. $\hat{P}_i^t = \frac{P_i^t}{\Sigma_{i=1}^{N}P_i^t}$ represents the normalized flux from pixel $i$ at time $t$, where a grid of $i$ pixels are chosen around the centroiding position.
 
-\subsection{Properties and Climates of exoplanets}%  (look at Arcangeli section 1.3)
+\subsection{Properties and climates of exoplanets}%  (look at Arcangeli section 1.3)
 
 \subsubsection{Chemistry}
 
@@ -309,7 +309,7 @@ Due to the intense stellar insolation that a hot Jupiter receives compared to Ju
 %    \item Atmosherpheric variability
 %    \item Radius Anomaly
 
-\subsection{Models of Exoplanet Atmospheres}%/what to expect
+\subsection{Models of exoplanet atmospheres}%/what to expect
 
 Predictions and conclusions about the composition of exoplanet atmospheres can be made by comparing observations to detailed models. Vast efforts have been made in the field of modeling exoplanets, from 1D radiative transfer codes to 3D global circulation models. In this thesis, we focus on the application of 1D forward models, whereby a grid of models is pre-computed and compared with the data \citep{Zhang2019, Tsai2017, Piskorz2018, Line2013a}. This is different to a retrieval method where the model parameters are tuned statistically in comparison with the data, which is more computationally expensive and so more simplifications are required. Our forward models contain physics and complexity which would not be possible to retrieve statistically, such as complex chemical networks, dynamical effects and self-consistent temperature-pressure calculations.
 

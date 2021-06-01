@@ -46,7 +46,8 @@ Additional studies have focused on breaking the degeneracy between albedo and re
 Following this, \citet{Schwartz2015} calculate the dayside temperature of 50 planets with thermal eclipse measurements in at least two infrared wavelengths (>0.8~$\mu$m). They note an unexpectedly steep correlation, such that the hotter planets had temperatures even hotter than irradiation temperature predictions. This supports the previous claim by \citet{Cowan2011b} that the hottest planets have lower Bond albedo and/or less efficient heat transport.
 \citet{Schwartz2017} incorporate phase offsets into their energy budget calculations of six planets, which pushes the results toward lower Bond albedos and slightly higher heat transport than before. \citet{Keating2019} and \citet{Beatty2019} estimate the nightside temperature of several hot Jupiters using \spitzer phase curves and find that despite the different levels of irradiation, they all demonstrate similar nightside temperatures. This suggests that they might all have some chemically similar high optically thick cloud layer that is emitting at the nightside temperature.
 
-Additionally, \citet{Garhart2020} perform  uniform analyses of 36 planets with \spitzerIRAC secondary eclipses at 3.6 and 4.5~$\mu$m. They find an increasing trend in the brightness temperature ratio with equilibrium temperature. They find that this trend is present throughout the entire temperature range continuously between the coolest and the hottest planets (800K to 2500K).
+Additionally, \citet{Garhart2020} perform  uniform analyses of 36 planets with \\
+\spitzerIRAC secondary eclipses at 3.6 and 4.5~$\mu$m. They find an increasing trend in the brightness temperature ratio with equilibrium temperature. They find that this trend is present throughout the entire temperature range continuously between the coolest and the hottest planets (800K to 2500K).
 
 Our study builds on the previous works by expanding to 78 planets, with almost double the number of ultra-hot Jupiters, and by employing a careful treatment of the stellar flux. We use the two warm \spitzerIRAC bandpasses (3.6~$\mu$m and 4.5~$\mu$m) \citep{Fazio2004, Werner2004} to study the near infrared trends in hot Jupiter emission. At these wavelengths, based on equilibrium chemistry, we expect to see spectral signatures of methane (CH4) (in the cooler planets) and carbon monoxide (CO) (in the hotter planets).
 More specifically, we focus on the deviation of these points from a blackbody, particularly on its effect when including the ultra-hot Jupiters. Furthermore, we now compare our results to a grid of forward models that encompass the processes relevant for the coolest to the ultra-hot planet atmospheres (molecular dissociation, \ce{H-} opacity, latent heat, and the formation of temperature inversions). In Section \ref{P2:sec:obs} we describe the \spitzerIRAC observations and data collection. In Section \ref{P2:sec:data} we describe the data analysis and the various temperatures used. In Section \ref{P2:sec:results} we present the results of the survey, we make a comparison to blackbodies, and demonstrate a transition to the ultra-hot Jupiters. In Section \ref{P2:sec:disc} we interpret our results in terms of albedo, redistribution, and temperature inversions.
@@ -121,14 +122,14 @@ Figure \ref{P2:fig:Linemodels} demonstrates a selection of the emission spectra 
 
 \begin{figure*}
     \centering
-    \includegraphics[width=\linewidth]{opacities.pdf}
+    \includegraphics[trim={2cm 0 3cm 0},clip,width=\linewidth]{opacities.pdf}
     \caption{Abundance weighted cross sections for a selection of the emission model grid described in Section \ref{P2:sec:models}, \citep{Piskorz2018}. Each panel presents the abundance weighted cross sections for planets with equilibrium temperatures of 1000K, 1800K, and 3000K. Each TP profile is for a planet around a 5300K star with C/carbon to oxygen (O =) 0.54, [M/H] = 0.0, logg = 3.0; the full grid is shown in the first panel of Figure \ref{P2:fig:Linemodels}. The plotted abundances are taken from a pressure of 30mbar, resulting in probing temperatures of 944K, 1786K, and 2859K in each of the respective TP profiles.}
     \label{P2:fig:opacities}
 \end{figure*}
 
 \begin{figure*}
     \centering
-    \includegraphics[width=\linewidth]{SpectraTPweight.pdf}
+    \includegraphics[trim={2cm 2cm 2cm 2cm},clip,width=\linewidth]{SpectraTPweight.pdf}
     \caption{ScCHIMERA model emission spectra for hot Jupiters \citep{Piskorz2018} for a set of models of varying equilibrium temperature with log(g) = 3.0, C/O = 0.54, [M/H] = 0, $R_p$ = 1$R_J$, and $R_*$ = 1$R_\odot$. In each row we show the flux ratio (left) and temperature pressure profiles (right) for the 1D atmospheres of planets with colors indicating the increasing equilibrium temperatures ranging from 1000K to 3600K (in 100K increments). Top, middle, and bottom rows show the grid for planets around a 4300K, 5300K, and a 6300K star, respectively. Blue and red shaded regions in the left panel indicate the \spitzerIRAC 3.6~$\mu$m and 4.5~$\mu$m bandpasses, respectively. Blue and red bold lines on the TP profiles correspond to the FWHM of the weighting functions for the 3.6~$\mu$m and 4.5~$\mu$m channels.}
     \label{P2:fig:Linemodels}
 \end{figure*}
