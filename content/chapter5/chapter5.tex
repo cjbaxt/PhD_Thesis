@@ -163,7 +163,7 @@ Uncertainties on the photometric points are calculated from photon noise and sca
 
 \subsection{\spitzer/IRAC lightcurve fitting}
 
-The \spitzer/IRAC transit lightcurves are fit using the same method as in \citep{Baxter2021}. We fit the Spitzer systematics using Pixel Level Decorrelation \citep{Deming2015} and fit the transit using batman \citep{Kreidberg2015}. Due to the differences in S/N, we treat the multi-planet systems and Kepler-16 differently. However, all the tests performed and the method used to obtain the results on final parameters is a full Markov Chain Monte Carlo (MCMC) with 100 walkers, 500 throwaway burn-in steps, and 1000 production steps. We confirm convergence by looking at the autocorrelation time.
+The \spitzer/IRAC transit lightcurves are fit using the same method as in \citet{Baxter2021}. We fit the Spitzer systematics using Pixel Level Decorrelation \citep{Deming2015} and fit the transit using batman \citep{Kreidberg2015}. Due to the differences in S/N, we treat the multi-planet systems and Kepler-16 differently. However, all the tests performed and the method used to obtain the results on final parameters is a full Markov Chain Monte Carlo (MCMC) with 100 walkers, 500 throwaway burn-in steps, and 1000 production steps. We confirm convergence by looking at the autocorrelation time.
 
 % Rp (Rj): 0.7885
 % Rp_err (Rj): 0.00081
@@ -449,22 +449,22 @@ In Table \ref{P4:tab:spitzerresults} we display the resulting best fit transit p
 \subsection{Comparing Kepler-16b to photodynamical model}
 
 
-\begin{sidewaysfigure}
+\begin{figure}
     \centering
     \includegraphics[trim={3cm 0 3cm 0},clip, width=\linewidth]{Kepler16b_bestfit+pred+data.pdf}
-    \caption{We show the Kepler-16b transits at 3.6\um~ (left) and 4.5\um~ (right) with the photodynamical predictions. These photodynamical transit predictions are computed with Kepler transit depths and Kepler limb darkening predictions, we are interested in comparing the timing. The blue line shows the photodynamical predictions made with the Kepler data alone and propagated into the future for the Spitzer observations. The green line shows the results from the photodynamical fit with Kepler plus Spitzer data. }
+    \caption{Observed transits of Kepler-16b with Spitzer 3.6\um (left) and 4.5\um (right). Measurements (black points) are plotted with their respective best fit transit light curves (red curve) and photodynamical models. These photodynamical transit predictions are computed with Kepler transit depths and Kepler limb darkening predictions, we are interested in comparing the timing. The blue line shows the photodynamical predictions made with the Kepler data alone and propagated into the future for the Spitzer observations. The green line shows the results from the photodynamical fit with Kepler plus Spitzer data. }
     \label{P4:fig:K16_photo}
-\end{sidewaysfigure}
+\end{figure}
 
 In Figure \ref{P4:fig:K16_photo} we plot the results of the photodynamical modeling of the last two Kepler-16b transits and compare it to the Spitzer data.
 We first performed the photodynamical fit with just the Kepler data and propagated the results forward in time to the Spitzer observations. These predictions are shown in blue on Figure \ref{P4:fig:K16_photo}. We found that the 3.6\um~ transit time measured with Spitzer (on 23rd September 2013) was in agreement with the Kepler predictions, with a deviation of just 1.6$\sigma$. However, there was a gap of two orbital periods until the 4.5\um~ Spitzer transit and we found that during this time the observation significantly deviated from the prediction. The 4.5\um~ transit arrived 14 minutes (37$\sigma$) early. Additionally, there is a significant deviation in the depth and duration of the transit at 4.5\um, which indicates that these transits can be used to constrain the orbital elements of the photodynamical model and the precession of the circumbinary orbit in time.
 
-\begin{sidewaysfigure}
+\begin{figure}
     \centering
     \includegraphics[trim={3cm 0 3cm 0},clip,width=\linewidth]{Kepler16b_photodynamicalmodel.pdf}
-    \caption{We show the results from the photodynamical model fitting of the Kepler and Spitzer data. These photodynamical transit predictions are computed with Kepler transit depths and Kepler limb darkening predictions. The pink shows the photodynamical predictions, the black and dark blue markers show the Kepler and Spitzer data respectively.}
+    \caption{Photometric time series of the Kepler-16 system measured by the the Kepler and Spitzer observatories overplotted with a photodynamical model for this system. These photodynamical predictions are computed These photodynamical predictions are computed with Kepler transit depths and Kepler limb darkening predictions. The pink line shows the photodynamical predictions, the black and dark blue markers show the Kepler and Spitzer data respectively.}
     \label{P4:fig:K16_model}
-\end{sidewaysfigure}
+\end{figure}
 
 
 In our second fit, we incorporated the Spitzer data into the fit of the photodynamical model. The resulting lightcurves are shown in green on Figure \ref{P4:fig:K16_photo}. Additionally, in Figure \ref{P4:fig:K16_model} we plot the resulting lightcurve of the photodynamical model of Kepler-16b over the entire baseline (Kepler + Spitzer). The model contains 4 types of transits/occultations in total: star B eclipsing star A, star A occulting star B, planet b transiting star A and planet b transiting star B. The two last transits in the Figure (in dark blue) show the \spitzer transits of planet b transiting star A. There are 153 days between the last \Kepler observation and the first \spitzer observation. Given that the orbital period of planet b is around 219 days, this means that the 3.6\um \spitzer lightcurve contains the next transit of planet b after the last one in the \Kepler data. Additionally, there are then two orbital periods between the 3.6 and 4.5\um Spitzer transits, which provides a significant extension to the baseline.
