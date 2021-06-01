@@ -20,7 +20,7 @@
 }
 
 % Unit shortcuts
-\newcommand{\um}{\ensuremath{\mu \rm{m}}\xspace}
+%\newcommand{\um}{\ensuremath{\mu \rm{m}}\xspace}
 \newcommand{\degr}{\ensuremath{^{\circ}}\xspace}
 \newcommand{\arcsec}{\ensuremath{^{\prime\prime}}\xspace}
 
@@ -52,16 +52,39 @@
 \renewcommand{\labelitemii}{$\bullet$}
 
 
-% citation aliases
-\defcitealias{tauris:98}{TT98}
-\defcitealias{ramirez-agudelo:15}{R-A15}
+% helpful commands
+%fromintro
+\newcommand{\rprss}{$R_p^2/R_s^2$}
+\newcommand{\fpfs}{$F_p/F_s$}
+\newcommand{\um}{$\mu$m}
+
+% from chapter 2
+\newcommand{\cmcms}{cm\textsuperscript{2}/s}
+\newcommand{\cmss}{cm/s\textsuperscript{2}}
+
+%from chatper 3
+\newcommand{\micron }{$\mu$m }
+\newcommand{\CO}{\ce{CO}}
+\newcommand{\water}{\ce{H2O}}
+\newcommand{\methane}{\ce{CH4}}
+
+% from chapter 4
+
+% from chapter 5
+\newcommand{\spitzer}{\textit{Spitzer}~}
+\newcommand{\spitzerIRAC}{\textit{Spitzer}/IRAC~}
+\newcommand{\Teff}{$T_{\rm eff}$}
+\newcommand{\Teq}{$T_{\rm eq}$}
+%\newcommand{\cmss}{cm/s\textsuperscript{2}}
+%\newcommand{\um}{$\mu$m}
+\newcommand{\Kepler}{\textit{Kepler}}
 
 \interfootnotelinepenalty=10000    % brute-forces the footnote not to break over two pages
 \setlength{\belowcaptionskip}{-5pt}
 
 %%% TOC customization%%% TOC customization
 \makeatletter
-\renewcommand{\@dotsep}{10000} 
+\renewcommand{\@dotsep}{10000}
 \makeatother
 %%% Local Variables:
 %%% mode: latex
