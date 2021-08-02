@@ -102,8 +102,11 @@
 
 %% load font
 % \usepackage{metrouberfont}
+% \usepackage{fontspec}
+% \newfontfamily\qt{QTDeuce}
+% \def\newfamily{\qt}
 
-
+% this is for the chapter title TODO
 \titleformat{\chapter}[display]{\Large}{\vspace*{-2.3\baselineskip}\raggedleft\textcolor{gray}{\normalsize\rm
     \chaptertitlename\hspace*{2.5em}}\\\titlerule\vspace*{0.3pc}{\hrulefill\fontsize{150}{150}\selectfont\selectfont\textcolor{gray}{\thechapter}}}{-77pt}{
   \scshape \rmfamily \linespread{1000}\parbox[t][0pt][c]{0.8\textwidth}}
